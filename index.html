@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica y características del archivo</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tooltip {
+            opacity: 0;
+            position: absolute;
+            pointer-events: none;
+            font-family: Arial, helvetica, sans-serif;
+            font-size: 1rem;
+            padding: .5rem;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #FFFFFF;
+            box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
+            color: #FFFFFF;
+            border-radius: 4px;
+        }
+        svg {
+            margin-top: 20px;
+        }
+        #chart {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualización de datos y características del archivo</h1>
+    <!-- Enlace de descarga del archivo -->
+    <a href="https://www.dropbox.com/scl/fi/llo681jigm2w53htljogv/MS_MC.txt?rlkey=4p58ksuedog6jaav928ufnncq&dl=1" target="_blank">
+        Descargar archivo
+    </a>
+
+    <!-- Aquí se mostrarán las características del archivo -->
+    <div id="file-info"></div>
+
+    <!-- Aquí se generará la gráfica -->
+    <div id="chart"></div>
+</body>
+</html>
